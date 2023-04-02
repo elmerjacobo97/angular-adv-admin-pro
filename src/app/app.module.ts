@@ -5,10 +5,17 @@ import { PagesModule } from './pages/pages.module';
 import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
 import { NotPageFoundComponent } from './not-page-found/not-page-found.component';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
   declarations: [AppComponent, NotPageFoundComponent],
-  imports: [BrowserModule, AppRoutingModule, PagesModule, AuthModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    PagesModule,
+    AuthModule,
+    ComponentsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
